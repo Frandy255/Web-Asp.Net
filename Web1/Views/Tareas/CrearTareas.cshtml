@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] - Web1</title>
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/Web1.styles.css" asp-append-version="true" />
+  @model Web1.Models.TareaModel
+
+</head>
+
+<body>
+  <h1 class="text-center mb-sm-5"> Crear tareas</h1>
+
+   <form asp-action="CrearTarea" asp-controller="Tareas" method="post">
+    <div class="mb-3">
+      <label for="action" asp-for="Name" class="form-label">Nombre: </label>
+      <input type="text" asp-for="Name" class="form-control">
+      <span asp-validation-for="Name"></span>
+    </div>
+
+    <div class="mb-3">
+      <label for="action" asp-for="Description" class="form-label">Descripcion</label>
+      <input type="text" asp-for="Description" class="form-control">
+      <span asp-validation-for="Description"></span>
+    </div>
+
+    <div class="mb-3 form-group">
+        <label asp-for="Status"></label>
+        <select asp-for="Status" class="form-control">
+            <option value="Por hacer">Por hacer</option>
+            <option value="Haciendo">Haciendo</option>
+            <option value="Hecho">Hecho</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="action" asp-for="Priority"></label>
+      <select asp-for="Priority" class="form-control">
+          <option value="Baja">Baja</option>
+          <option value="Media">Media</option>
+          <option value="Alta">Alta</option>
+      </select>
+      <span asp-validation-for="Priority"></span>
+    </div>
+
+    <div class="mb-3">
+      <label for="action" asp-for="DateStart" class="form-label">Fecha de inicio </label>
+      <input type="datetime-local" asp-for="DateStart" class="form-control">
+      <span asp-validation-for="DateStart"></span>
+    </div>
+
+    <div class="mb-3">
+      <label for="action" asp-for="DateEnd" class="form-label">Fecha de terminacion</label>
+      <input type="datetime-local" asp-for="DateEnd" class="form-control">
+      <span asp-validation-for="DateEnd"></span>
+    </div>
+
+    <div class="d-flex justify-content-center h-75">
+        <input type="submit" class="h-50 border-3 btn-success w-50 " />
+    </div>
+  </form>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - Web1</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/Web1.styles.css" asp-append-version="true" />
+    </head>
+
+    <body>
+        <h1 class="text-center">Tareas Creadas</h1>
+        <p class="text-body text-center">La fecha es @DateTime.Now</p>
+
+        <table class="table table-hover table-bordered ">
+            <thead class="table-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Priority</th>
+                    <th>Date Start</th>
+                    <th>Date End</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>elemento 1</td>
+                    <td>elemento 2</td>
+                    <td>elemento 3</td>
+                    <td>elemento 4</td>
+                    <td>elemento 5</td>
+                    <td>elemento 6</td>
+                    <td>elemento 7</td>
+                    <td><button>Editar</button></td>
+                    <td><button>Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+    </body>
+
+    </html>
+}
