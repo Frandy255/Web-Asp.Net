@@ -61,7 +61,20 @@
     <div class="d-flex justify-content-center h-75">
         <input type="submit" class="h-50 border-3 btn-success w-50 " />
     </div>
-  </form>
+
+        @* @if (ViewBag.Error != null)
+        {
+            <script>
+                alert("@ViewBag.Error");
+            </script>
+        }
+        else if(ViewBag.Correcto != null)
+        {
+            <script>
+                alert("@ViewBag.Correcto");
+            </script>
+        } *@
+    </form>
     
 
 </body>
