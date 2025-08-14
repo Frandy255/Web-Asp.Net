@@ -18,6 +18,7 @@
             
 
             <form asp-action="EditarTarea" asp-controller="Tareas" method="post">
+                <input type="hidden" asp-for="Id"/>
 
                 <div class="mb-3">
                   <label for="action" asp-for="Name" class="form-label">Nombre </label>

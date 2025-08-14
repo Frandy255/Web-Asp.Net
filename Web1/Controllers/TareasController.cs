@@ -1,28 +1,47 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
-using Mono.TextTemplating;
 using System.Data;
-using System.Security.Claims;
+using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using Web1.Data;
 using Web1.Models;
+using Web1.Repositorios;
 
 namespace Web1.Controllers
 {
     public class TareasController : Controller
     {
-        private readonly ApplicationDbContext context;
-        public TareasController(ApplicationDbContext contxt) 
+        private readonly RepoTareas repoTare;
+        public TareasController(RepoTareas rept) 
         {
-            context = contxt;
+            repoTare = rept;
         }
 
         public async Task<IActionResult> VerTareas()
         {
-            var tareas = await context.tareaModels.ToListAsync();
-            return View(tareas);
+            List<TareaModel> lista = new List<TareaModel>();
+            
+            var listado  = repoTare.RegTareasAsy();
+
+            lista.Add(listado);
+            foreach (var a in listado)
+            {
+
+            }
+            return View(listado);
+        }
+
+        public void mostrarMensaje(int res)
+        {
+            if (res == 0)
+            {
+                TempData["Message"] = "No se han podido cargar los datos";
+            }
+            else if (res == 1)
+            {
+                TempData["Message"] = "Los datos han sido cargados correctamente";
+            }
         }
 
         [HttpGet]
@@ -35,68 +54,31 @@ namespace Web1.Controllers
         [HttpPost]
         public async Task<IActionResult> CrearTarea(TareaModel tma)
         {
-
+            int resultado = 0;
             try
             {
                 if (ModelState.IsValid)
                 {
-
-
-                    string nombre = tma.Name;
-                    string descrip = tma.Description;
-                    string estado = tma.Status;
-                    string prior = tma.Priority;
-                    DateTime inicio = Convert.ToDateTime(tma.DateStart.ToString("dd-MM-yyyy HH:mm:ss")); /*Convert.ToDateTime(tma.DateStart.ToString("yyyy-MM-dd HH:mm:ss"))*/;
-                    DateTime fin = Convert.ToDateTime(tma.DateEnd.ToString("dd-MM-yyyy HH:mm:ss"));
-                    string usuarioId = "E71C60E5-D581-4A2C-8764-A890F023FCBA";
-
-                    var resul = new SqlParameter
-                    {
-
-                        ParameterName = "@result",
-                        SqlDbType = System.Data.SqlDbType.Int,
-                        Direction = System.Data.ParameterDirection.Output
-
-                    };
-
-
-                    await context.Database.ExecuteSqlRawAsync(
-                        "EXEC pa_AgregarTareas @nombre, @descripcion, @estado, @prioridad, @inicio, @fin, @idUsuario, @result OUTPUT", new[]
-                        {
-                            new SqlParameter("@nombre", nombre ?? (object)DBNull.Value),
-                            new SqlParameter("@descripcion", descrip ?? (object)DBNull.Value),
-                            new SqlParameter("@estado", estado ?? (object)DBNull.Value),            // e.g. "Por hacer"
-                            new SqlParameter("@prioridad", prior ?? (object)DBNull.Value),      // e.g. "Baja"
-                            new SqlParameter("@inicio", inicio), // DateTime directamente
-                            new SqlParameter("@fin", fin),       // DateTime directamente
-                            new SqlParameter("@idUsuario", usuarioId ?? (object)DBNull.Value),
-                            resul
-                        }
-                        
-                    );
-
-                    ViewBag.Correcto = "El registro fue cargado";
-                    return RedirectToAction(nameof(VerTareas));
-
+                   resultado = await repoTare.AgregarTareasAsy(tma);
                 }
                 else
                 {
-                    Console.WriteLine("else");
-
-                    ViewBag.Error = "No se han podido cargar los datos";
+                    resultado = 0;
                     return View("CrearTareas", tma);
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
-
-                ViewBag.Error = "No se han podido cargar los datos";
+                resultado = 0;
                 return View("CrearTareas", tma);
-
             }
 
+            mostrarMensaje(resultado);
+            return RedirectToAction(nameof(VerTareas));
         }
+        
+
+             
 
 
        
@@ -115,27 +97,87 @@ namespace Web1.Controllers
         [HttpPost]
         public async Task<IActionResult> EditarTarea(TareaModel tma)
         {
-            var registroViejo = await context.tareaModels.FindAsync(tma.Id);
+            
+            try
+            {
+                var res = new SqlParameter
+                {
+                    ParameterName = "@salida",
+                    SqlDbType = SqlDbType.Int,
+                    Direction = ParameterDirection.Output
 
-            if (registroViejo == null)
-            {
-                return NotFound();
-            }
-            else
-            {
+                };
+                int id = tma.Id;
                 string nam = tma.Name;
                 string sta = tma.Status;
                 string pri = tma.Priority;
                 string des = tma.Description;
                 DateTime start = tma.DateStart;
                 DateTime end = tma.DateEnd;
+                string usser = "E71C60E5-D581-4A2C-8764-A890F023FCBA";
 
                 int respuesta = await context.Database.ExecuteSqlRawAsync(
+                    "Exec pa_EditarTareas @id, @name, @description, @status, @priority, @start, @end, @userId, @salida output", new[]
+                    {
+                    new SqlParameter("@id", id),
+                    new SqlParameter("@name", nam),
+                    new SqlParameter("@description", des),
+                    new SqlParameter("@status", sta),
+                    new SqlParameter("@priority", pri),
+                    new SqlParameter("@start", start),
+                    new SqlParameter("@end", end),
+                    new SqlParameter("@userId", usser),
+                    res
 
-                    );
-                
-                return View();
+                    }              
+                );
+
+                Console.WriteLine($"La respuesta es: {respuesta}");
+
             }
+            catch (Exception ex)
+            {
+                 
+                Console.WriteLine(ex.ToString());
+
+                throw;
+            }
+
+            return RedirectToAction(nameof(VerTareas));
+            
+        }
+
+        public async Task<IActionResult> EliminarTareas(TareaModel tma)
+        {
+            try
+            {
+                int id = tma.Id;
+                string idUser = "E71C60E5-D581-4A2C-8764-A890F023FCBA";
+
+                var res = new SqlParameter
+                {
+                    SqlDbType = SqlDbType.Int,
+                    ParameterName = "@result",
+                    Direction = ParameterDirection.Output
+                };
+
+                int respuesta = await context.Database.ExecuteSqlRawAsync(
+                   "exec pa_EliminarTareas @id, @idUser, @result output", new[]
+                   {
+                       new SqlParameter("@id", id),
+                       new SqlParameter("@idUser", idUser),
+                       res
+                   }
+               );
+                TempData["Message"] = "Se ha eliminado correctamente";
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString()); 
+            }
+
+            return RedirectToAction(nameof(VerTareas));
+            
         }
     }
 }

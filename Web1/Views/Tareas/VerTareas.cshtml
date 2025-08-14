@@ -46,7 +46,7 @@ For more information on enabling MVC for empty projects, visit https://go.micros
                     <tr>
                         <td>@i</td>
                         <td>@tr.Name</td>
-                        <td>@tr.Description 3</td>
+                        <td>@tr.Description </td>
                         <td>@tr.Status</td>
                         <td>@tr.Priority</td>
                         <td>@tr.DateStart</td>
@@ -54,12 +54,16 @@ For more information on enabling MVC for empty projects, visit https://go.micros
 
                         <td> <a asp-controller="Tareas" asp-action="EditarTareas" asp-route-id="@tr.Id">Editar</a> </td>
                         
-                        <form asp-action="EliminarTarea" asp-controller="Tareas" method="post">
-                            <td><button>Eliminacion</button></td>
-                        </form>
+                       <td> <a asp-controller="Tareas" asp-action="EliminarTareas" asp-route-id="@tr.Id" onclick="return confirm('Seguro que deseas eliminarlo?')">Eliminar</a></td>
                     </tr>
                 }
-               
+                @if (TempData["Message"] != null)
+                {
+                        <script>                       
+                            alert('@TempData["Message"]');                        
+                        </script>
+                }
+
             </tbody>
         </table>
 
