@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\repositorios\\repotareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\repositorios\\repotareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\interfaces\\itareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\interfaces\\itareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\views\\tareas\\vertareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\views\\tareas\\vertareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\views\\tareas\\creartareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\views\\tareas\\creartareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\views\\tareas\\editartareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -65,17 +73,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 466,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "TareasController.cs",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\TareasController.cs",
               "RelativeDocumentMoniker": "Web1\\Controllers\\TareasController.cs",
               "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\TareasController.cs",
               "RelativeToolTip": "Web1\\Controllers\\TareasController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAiwEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-24T20:51:10.932Z",
               "IsPinned": true,
@@ -83,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CrearTareas.cshtml",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Tareas\\CrearTareas.cshtml",
               "RelativeDocumentMoniker": "Web1\\Views\\Tareas\\CrearTareas.cshtml",
@@ -92,12 +100,11 @@
               "ViewState": "AgIAAC0AAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-25T20:20:24.569Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "VerTareas.cshtml",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Tareas\\VerTareas.cshtml",
               "RelativeDocumentMoniker": "Web1\\Views\\Tareas\\VerTareas.cshtml",
@@ -111,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "EditarTareas.cshtml",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Tareas\\EditarTareas.cshtml",
               "RelativeDocumentMoniker": "Web1\\Views\\Tareas\\EditarTareas.cshtml",
@@ -120,12 +127,11 @@
               "ViewState": "AgIAACoAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-07T16:34:04.902Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_Layout.cshtml",
@@ -138,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Web1\\Controllers\\HomeController.cs",
@@ -151,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Program.cs",
               "RelativeDocumentMoniker": "Web1\\Program.cs",
@@ -164,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\appsettings.json",
               "RelativeDocumentMoniker": "Web1\\appsettings.json",
@@ -177,7 +183,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
+              "Title": "RepoTareas.cs",
+              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Repositorios\\RepoTareas.cs",
+              "RelativeDocumentMoniker": "Web1\\Repositorios\\RepoTareas.cs",
+              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Repositorios\\RepoTareas.cs",
+              "RelativeToolTip": "Web1\\Repositorios\\RepoTareas.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T19:38:11.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ITareas.cs",
+              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Interfaces\\ITareas.cs",
+              "RelativeDocumentMoniker": "Web1\\Interfaces\\ITareas.cs",
+              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Interfaces\\ITareas.cs",
+              "RelativeToolTip": "Web1\\Interfaces\\ITareas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T19:30:13.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -189,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "20250803185106_Primera.cs",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Migrations\\20250803185106_Primera.cs",
               "RelativeDocumentMoniker": "Web1\\Migrations\\20250803185106_Primera.cs",
@@ -201,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TareaModel.cs",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Models\\TareaModel.cs",
               "RelativeDocumentMoniker": "Web1\\Models\\TareaModel.cs",
@@ -213,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Web1\\Data\\ApplicationDbContext.cs",
@@ -225,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "20250724191353_tareaMigracionSegunda.cs",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Migrations\\20250724191353_tareaMigracionSegunda.cs",
               "RelativeDocumentMoniker": "Web1\\Migrations\\20250724191353_tareaMigracionSegunda.cs",
@@ -237,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Web1\\Views\\Home\\Index.cshtml",
