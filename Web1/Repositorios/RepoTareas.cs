@@ -35,19 +35,20 @@ namespace Web1.Repositorios
                 DateTime fin = Convert.ToDateTime(tma.DateEnd.ToString("dd-MM-yyyy HH:mm:ss"));
                 string usuarioId = "E71C60E5-D581-4A2C-8764-A890F023FCBA";
 
-                var resul = new SqlParameter
+
+                if (inicio <= fin)
                 {
+                    var resul = new SqlParameter
+                    {
+                        ParameterName = "@result",
+                        SqlDbType = System.Data.SqlDbType.Int,
+                        Direction = System.Data.ParameterDirection.Output
+                    };
 
-                    ParameterName = "@result",
-                    SqlDbType = System.Data.SqlDbType.Int,
-                    Direction = System.Data.ParameterDirection.Output
 
-                };
-
-
-                result = await context.Database.ExecuteSqlRawAsync(
-                     "EXEC pa_AgregarTareas @nombre, @descripcion, @estado, @prioridad, @inicio, @fin, @idUsuario, @result OUTPUT", new[]
-                     {
+                    result = await context.Database.ExecuteSqlRawAsync(
+                         "EXEC pa_AgregarTareas @nombre, @descripcion, @estado, @prioridad, @inicio, @fin, @idUsuario, @result OUTPUT", new[]
+                         {
                             new SqlParameter("@nombre", nombre ?? (object)DBNull.Value),
                             new SqlParameter("@descripcion", descrip ?? (object)DBNull.Value),
                             new SqlParameter("@estado", estado ?? (object)DBNull.Value),            // e.g. "Por hacer"
@@ -56,10 +57,16 @@ namespace Web1.Repositorios
                             new SqlParameter("@fin", fin),       // DateTime directamente
                             new SqlParameter("@idUsuario", usuarioId ?? (object)DBNull.Value),
                             resul
-                     }
+                         }
+                         );
+                    ;
 
-                 );
-            }
+                }
+                else
+                {
+                    result = 0;
+                }
+            }      
             catch (Exception ex)
             {
                 result = 0;
@@ -68,12 +75,105 @@ namespace Web1.Repositorios
             return result;
         }
 
-        public async Task<List<TareaModel>> RegTareasAsy()
+        public async Task<List<TareaModel>> VerTareasAsy()
         {
             List<TareaModel> listTma = new List<TareaModel>();
 
             listTma = await context.tareaModels.ToListAsync();
             return listTma;
         }
+
+        public async Task<int> ActualizarTareasAsy(TareaModel tma)
+        {
+            int respuesta = 0;
+            try
+            {
+                var res = new SqlParameter
+                {
+                    ParameterName = "@salida",
+                    SqlDbType = SqlDbType.Int,
+                    Direction = ParameterDirection.Output
+
+                };
+                int id = tma.Id;
+                string nam = tma.Name;
+                string sta = tma.Status;
+                string pri = tma.Priority;
+                string des = tma.Description;
+                DateTime start = tma.DateStart;
+                DateTime end = tma.DateEnd;
+                string usser = "E71C60E5-D581-4A2C-8764-A890F023FCBA";
+
+                respuesta = await context.Database.ExecuteSqlRawAsync(
+                    "Exec pa_EditarTareas @id, @name, @description, @status, @priority, @start, @end, @userId, @salida output", new[]
+                    {
+                    new SqlParameter("@id", id),
+                    new SqlParameter("@name", nam),
+                    new SqlParameter("@description", des),
+                    new SqlParameter("@status", sta),
+                    new SqlParameter("@priority", pri),
+                    new SqlParameter("@start", start),
+                    new SqlParameter("@end", end),
+                    new SqlParameter("@userId", usser),
+                    res
+
+                    }
+                );
+
+            }
+            catch (Exception ex)
+            {
+                respuesta = 0;
+                throw new Exception($"Algo ha salido mal: {ex.ToString()}");
+            }
+            return respuesta;
+
+        }
+
+        public async Task<TareaModel> VerTareaAsy(TareaModel tma)
+        {
+            TareaModel tareaEditar = new TareaModel();
+
+            tareaEditar = await context.tareaModels.FindAsync(tma.Id);
+
+            return tareaEditar;
+
+        }
+
+        public async Task<int> EliminarTareasAsy(TareaModel tma)
+        {
+            int respuesta = 0;
+            try
+            {
+                int id = tma.Id;
+                string idUser = "E71C60E5-D581-4A2C-8764-A890F023FCBA";
+
+                var res = new SqlParameter
+                {
+                    SqlDbType = SqlDbType.Int,
+                    ParameterName = "@result",
+                    Direction = ParameterDirection.Output
+                };
+
+                 respuesta = await context.Database.ExecuteSqlRawAsync(
+                   "exec pa_EliminarTareas @id, @idUser, @result output", new[]
+                   {
+                           new SqlParameter("@id", id),
+                           new SqlParameter("@idUser", idUser),
+                           res
+                   }
+               );
+            }
+            catch (Exception ex)
+            {
+                respuesta = 0;
+                throw new Exception(ex.ToString());
+            }
+
+            return respuesta;
+
+
+        }
+
     }
 }

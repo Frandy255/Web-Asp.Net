@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Runtime.Intrinsics.X86;
 using Web1.Data;
+using Web1.Interfaces;
 using Web1.Models;
 using Web1.Repositorios;
 
@@ -12,24 +13,10 @@ namespace Web1.Controllers
 {
     public class TareasController : Controller
     {
-        private readonly RepoTareas repoTare;
-        public TareasController(RepoTareas rept) 
+        private readonly ITareas inTareas;
+        public TareasController(ITareas itr) 
         {
-            repoTare = rept;
-        }
-
-        public async Task<IActionResult> VerTareas()
-        {
-            List<TareaModel> lista = new List<TareaModel>();
-            
-            var listado  = repoTare.RegTareasAsy();
-
-            lista.Add(listado);
-            foreach (var a in listado)
-            {
-
-            }
-            return View(listado);
+            inTareas = itr;
         }
 
         public void mostrarMensaje(int res)
@@ -40,8 +27,19 @@ namespace Web1.Controllers
             }
             else if (res == 1)
             {
-                TempData["Message"] = "Los datos han sido cargados correctamente";
+                TempData["Message"] = "Los datos han sido modificados/cargados correctamente";
             }
+        }
+
+        public async Task<IActionResult> VerTareas()
+        {
+            List<TareaModel> lista = new List<TareaModel>();
+            
+            var listado = await inTareas.VerTareasAsy();
+
+            lista.AddRange(listado);
+             
+            return View(lista);
         }
 
         [HttpGet]
@@ -59,7 +57,7 @@ namespace Web1.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                   resultado = await repoTare.AgregarTareasAsy(tma);
+                    resultado = await inTareas.AgregarTareasAsy(tma);
                 }
                 else
                 {
@@ -84,7 +82,7 @@ namespace Web1.Controllers
        
         public async Task<IActionResult> EditarTareas(TareaModel tma)
         {
-            var registro = await context.tareaModels.FindAsync(tma.Id);
+            TareaModel registro = await inTareas.VerTareaAsy(tma);
 
             if (registro == null)
             {
@@ -97,87 +95,17 @@ namespace Web1.Controllers
         [HttpPost]
         public async Task<IActionResult> EditarTarea(TareaModel tma)
         {
-            
-            try
-            {
-                var res = new SqlParameter
-                {
-                    ParameterName = "@salida",
-                    SqlDbType = SqlDbType.Int,
-                    Direction = ParameterDirection.Output
-
-                };
-                int id = tma.Id;
-                string nam = tma.Name;
-                string sta = tma.Status;
-                string pri = tma.Priority;
-                string des = tma.Description;
-                DateTime start = tma.DateStart;
-                DateTime end = tma.DateEnd;
-                string usser = "E71C60E5-D581-4A2C-8764-A890F023FCBA";
-
-                int respuesta = await context.Database.ExecuteSqlRawAsync(
-                    "Exec pa_EditarTareas @id, @name, @description, @status, @priority, @start, @end, @userId, @salida output", new[]
-                    {
-                    new SqlParameter("@id", id),
-                    new SqlParameter("@name", nam),
-                    new SqlParameter("@description", des),
-                    new SqlParameter("@status", sta),
-                    new SqlParameter("@priority", pri),
-                    new SqlParameter("@start", start),
-                    new SqlParameter("@end", end),
-                    new SqlParameter("@userId", usser),
-                    res
-
-                    }              
-                );
-
-                Console.WriteLine($"La respuesta es: {respuesta}");
-
-            }
-            catch (Exception ex)
-            {
-                 
-                Console.WriteLine(ex.ToString());
-
-                throw;
-            }
-
+            int resp = await inTareas.ActualizarTareasAsy(tma);
+            mostrarMensaje(resp);
             return RedirectToAction(nameof(VerTareas));
-            
         }
 
         public async Task<IActionResult> EliminarTareas(TareaModel tma)
         {
-            try
-            {
-                int id = tma.Id;
-                string idUser = "E71C60E5-D581-4A2C-8764-A890F023FCBA";
-
-                var res = new SqlParameter
-                {
-                    SqlDbType = SqlDbType.Int,
-                    ParameterName = "@result",
-                    Direction = ParameterDirection.Output
-                };
-
-                int respuesta = await context.Database.ExecuteSqlRawAsync(
-                   "exec pa_EliminarTareas @id, @idUser, @result output", new[]
-                   {
-                       new SqlParameter("@id", id),
-                       new SqlParameter("@idUser", idUser),
-                       res
-                   }
-               );
-                TempData["Message"] = "Se ha eliminado correctamente";
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString()); 
-            }
-
+            int resp = await inTareas.EliminarTareasAsy(tma);
+            mostrarMensaje(resp);
             return RedirectToAction(nameof(VerTareas));
-            
+
         }
     }
 }
