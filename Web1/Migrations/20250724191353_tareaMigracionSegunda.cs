@@ -1,4 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Web1;
+using Web1.Data;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 #nullable disable
 

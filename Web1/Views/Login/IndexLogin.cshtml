@@ -1,33 +1,55 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - Web1</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/Web1.styles.css" asp-append-version="true" />
+        @model Web1.Models.UsuarioModels
+
+    </head>
 
 
-}
+    <body>
+        <div class="text-center">
+            <h1 class="display-4">Welcome</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+            <h1 class="text-start text-center">Inicio de sesion</h1>
 
-    <h1 class="text-start text-center">Inicio de sesion</h1>
+            <form>
+           @*      <div class="mb-3">
+                    <label for="action" asp-for="Name" class="form-label">Nombre </label>
+                    <input type="text" asp-for="Name" class="form-control">
+                    <span asp-validation-for="Name"></span>
+                </div>
 
-   <form asp-action="CrearTarea" asp-controller="Tareas" method="post">
-   @*  <div class="mb-3">
-      <label for="action" asp-for="Name" class="form-label">Nombre: </label>
-      <input type="text" asp-for="Name" class="form-control">
-      <span asp-validation-for="Name"></span>
-    </div>
+                <div class="mb-3">
+                    <label for="action" asp-for="LastName" class="form-label">Apellido</label>
+                    <input type="text" asp-for="LastName" class="form-control">
+                    <span asp-validation-for="LastName"></span>
+                </div> *@
 
-    <div class="mb-3">
-      <label for="action" asp-for="Description" class="form-label">Descripcion</label>
-      <input type="text" asp-for="Description" class="form-control">
-      <span asp-validation-for="Description"></span>
-    </div> *@
+                <div class="mb-3">
+                    <label for="action" asp-for="UserName" class="text-start">Usuario: </label>
+                    <input type="text" asp-for="UserName" class="form-control">
+                    <span asp-validation-for="UserName"></span>
+                </div>
 
-        <div class="d-flex justify-content-center h-75">
-            <input type="submit" class="h-50 border-3 btn-success w-50 " />
+                <div class="mb-3">
+                    <label for="action" asp-for="PasswordHash" class="form-label">Contraseña</label>
+                    <input type="text" asp-for="PasswordHash" class="form-control">
+                    <span asp-validation-for="PasswordHash"></span>
+                </div>
+
+                <div class="d-flex justify-content-center h-75">
+                    <input type="submit" class="h-50 border-3 btn-success w-50 " />
+                </div>
+            </form>
+
+            
+
+
         </div>
-
-    </form>
-
-</div>
+    </body>
+</html>

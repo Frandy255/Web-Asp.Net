@@ -12,6 +12,6 @@ namespace Web1.Data
         }
 
         public DbSet<TareaModel> tareaModels { get; set; }
-
+        public DbSet<UsuarioModels> usuarioModels { get; set; }
     }
 }
