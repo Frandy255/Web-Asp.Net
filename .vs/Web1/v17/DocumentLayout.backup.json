@@ -3,68 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\views\\login\\indexlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\views\\login\\indexlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\models\\usuariomodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\models\\usuariomodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\models\\usuariomodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\models\\usuariomodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\views\\tareas\\creartareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\views\\tareas\\creartareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\repositorios\\repousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\repositorios\\repousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\views\\tareas\\editartareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\views\\tareas\\editartareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\migrations\\20250724182120_tareamigracioninicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\migrations\\20250724182120_tareamigracioninicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\migrations\\20250724191353_tareamigracionsegunda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\migrations\\20250724191353_tareamigracionsegunda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\repositorios\\repotareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\repositorios\\repotareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\interfaces\\itareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\interfaces\\itareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\views\\tareas\\vertareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\views\\tareas\\vertareas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\migrations\\20250803185106_primera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\migrations\\20250803185106_primera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|c:\\users\\eortiz\\documents\\github\\nueva carpeta\\web-asp.net\\web1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE5AC2AC-CEC2-4A25-9F8D-4B358A9D03BE}|Web1\\Web1.csproj|solutionrelative:web1\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,126 +38,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 466,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TareasController.cs",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\TareasController.cs",
-              "RelativeDocumentMoniker": "Web1\\Controllers\\TareasController.cs",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\TareasController.cs",
-              "RelativeToolTip": "Web1\\Controllers\\TareasController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAmwEsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T20:51:10.932Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RepoTareas.cs",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Repositorios\\RepoTareas.cs",
-              "RelativeDocumentMoniker": "Web1\\Repositorios\\RepoTareas.cs",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Repositorios\\RepoTareas.cs",
-              "RelativeToolTip": "Web1\\Repositorios\\RepoTareas.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAcwKkAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T19:38:11.265Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ITareas.cs",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Interfaces\\ITareas.cs",
-              "RelativeDocumentMoniker": "Web1\\Interfaces\\ITareas.cs",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Interfaces\\ITareas.cs",
-              "RelativeToolTip": "Web1\\Interfaces\\ITareas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T19:30:13.225Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CrearTareas.cshtml",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Tareas\\CrearTareas.cshtml",
-              "RelativeDocumentMoniker": "Web1\\Views\\Tareas\\CrearTareas.cshtml",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Tareas\\CrearTareas.cshtml",
-              "RelativeToolTip": "Web1\\Views\\Tareas\\CrearTareas.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-25T20:20:24.569Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Web1\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Web1\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAC8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-24T20:42:02.338Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VerTareas.cshtml",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Tareas\\VerTareas.cshtml",
-              "RelativeDocumentMoniker": "Web1\\Views\\Tareas\\VerTareas.cshtml",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Tareas\\VerTareas.cshtml",
-              "RelativeToolTip": "Web1\\Views\\Tareas\\VerTareas.cshtml",
-              "ViewState": "AgIAACMAAAAAAAAAAAAYwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-24T21:16:14.937Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EditarTareas.cshtml",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Tareas\\EditarTareas.cshtml",
-              "RelativeDocumentMoniker": "Web1\\Views\\Tareas\\EditarTareas.cshtml",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Tareas\\EditarTareas.cshtml",
-              "RelativeToolTip": "Web1\\Views\\Tareas\\EditarTareas.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-07T16:34:04.902Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IndexLogin.cshtml",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Login\\IndexLogin.cshtml",
-              "RelativeDocumentMoniker": "Web1\\Views\\Login\\IndexLogin.cshtml",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Login\\IndexLogin.cshtml",
-              "RelativeToolTip": "Web1\\Views\\Login\\IndexLogin.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAABMAAAAAAAAAA==",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "Web1\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Login\\Login.cshtml*",
+              "RelativeToolTip": "Web1\\Views\\Login\\Login.cshtml*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-18T19:22:11.857Z",
+              "WhenOpened": "2025-08-20T14:51:33.101Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Web1\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Web1\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T19:29:23.564Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UsuarioModels.cs",
               "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Models\\UsuarioModels.cs",
               "RelativeDocumentMoniker": "Web1\\Models\\UsuarioModels.cs",
               "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Models\\UsuarioModels.cs",
               "RelativeToolTip": "Web1\\Models\\UsuarioModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-19T19:24:37.684Z",
               "IsPinned": true,
@@ -201,93 +84,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Web1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Web1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Interfaces\\IUsuario.cs",
+              "RelativeDocumentMoniker": "Web1\\Interfaces\\IUsuario.cs",
+              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Interfaces\\IUsuario.cs",
+              "RelativeToolTip": "Web1\\Interfaces\\IUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T21:36:13.627Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\appsettings.json",
-              "RelativeDocumentMoniker": "Web1\\appsettings.json",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\appsettings.json",
-              "RelativeToolTip": "Web1\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-23T15:22:18.222Z",
+              "WhenOpened": "2025-08-19T20:56:39.381Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "20250724182120_tareaMigracionInicial.cs",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Migrations\\20250724182120_tareaMigracionInicial.cs",
-              "RelativeDocumentMoniker": "Web1\\Migrations\\20250724182120_tareaMigracionInicial.cs",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Migrations\\20250724182120_tareaMigracionInicial.cs",
-              "RelativeToolTip": "Web1\\Migrations\\20250724182120_tareaMigracionInicial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "RepoUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Repositorios\\RepoUsuarios.cs",
+              "RelativeDocumentMoniker": "Web1\\Repositorios\\RepoUsuarios.cs",
+              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Repositorios\\RepoUsuarios.cs",
+              "RelativeToolTip": "Web1\\Repositorios\\RepoUsuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T19:49:48.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Web1\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Web1\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T19:29:23.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "20250803185106_Primera.cs",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Migrations\\20250803185106_Primera.cs",
-              "RelativeDocumentMoniker": "Web1\\Migrations\\20250803185106_Primera.cs",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Migrations\\20250803185106_Primera.cs",
-              "RelativeToolTip": "Web1\\Migrations\\20250803185106_Primera.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T18:51:07.018Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20250724191353_tareaMigracionSegunda.cs",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Migrations\\20250724191353_tareaMigracionSegunda.cs",
-              "RelativeDocumentMoniker": "Web1\\Migrations\\20250724191353_tareaMigracionSegunda.cs",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Migrations\\20250724191353_tareaMigracionSegunda.cs",
-              "RelativeToolTip": "Web1\\Migrations\\20250724191353_tareaMigracionSegunda.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwDsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T13:38:37.655Z",
+              "WhenOpened": "2025-08-19T20:57:41.881Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web1\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Web1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-28T13:37:39.657Z",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Web1\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Web1\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T21:21:31.816Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Program.cs",
+              "RelativeDocumentMoniker": "Web1\\Program.cs",
+              "ToolTip": "C:\\Users\\eortiz\\Documents\\GitHub\\Nueva carpeta\\Web-Asp.Net\\Web1\\Program.cs",
+              "RelativeToolTip": "Web1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T21:29:38.756Z",
+              "IsPinned": true,
               "EditorCaption": ""
             }
           ]
